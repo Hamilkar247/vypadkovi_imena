@@ -29,20 +29,26 @@ function Dobroho_ranku(props) {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="czolowiczi imena">
+      <div className="App-body">
+        <h2>імена / noms</h2>
+      </div>
+      <div className="App-body">
+        <div id="czolowiczi imena" className="hrupa_imen">
           <h5> чоловічі імена / noms masculins </h5>
           <Dobroho_ranku name="Andriy" />
           <Dobroho_ranku name="Artem" />
           <Dobroho_ranku name="Antin" />
         </div>
-        <div className="żinoczi imena">
+        <div id="żinoczi imena" className="hrupa_imen">
           <h5> жіночі імена / noms féminins </h5>
           <Dobroho_ranku name="Anna"/>
           <Dobroho_ranku name="Bohdana"/>
           <Dobroho_ranku name="Myroslava"/>
         </div>
-      </header>
+      </div>
+      <div id="knopku" className="App-body">
+         <button className="wypadkowi">випадкові нові імена/choisir de nouveaux noms </button>
+      </div>
     </div>
   )
 }
